@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+  font-weight: 900;
+  margin-bottom: 1em;
+  color: #824936;
+}
+
+h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+  font-weight: 900;
+  margin-bottom: 1em;
+  color: #824936;
+  margin-bottom: 1em;
+}
+
+h3 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+  font-weight: 900;
+  margin-bottom: 1em;
+  color: #824936;
+  margin-bottom: 1em;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+header, section {
+  padding: 4rem 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: min(90%, 70.5rem);
+}
+
+.container .split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container--narrow {
+  max-width: 30rem;
+}
+
+.bg-light {
+  background-color: #F3EED9;
+}
+
+.bg-primary {
+  color: #fff;
+  background-color: #824936;
+}
+
+.bg-dark {
+  color: #fff;
+  background-color: #222C2A;
+}
+
+.bg-primary h2, .bg-dark h2 {
+  color: #F3EED9;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .container .split {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .split > * {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .container .split > * + * {
+    margin-left: 2em;
+  }
+  .container header, .container section {
+    padding: 7rem 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */
